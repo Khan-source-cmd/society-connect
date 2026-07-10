@@ -1,0 +1,158 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles to maintain the original design */
+@layer base {
+  html {
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  body {
+    background-color: #f0f0f0;
+  }
+  
+  /* Landing page specific styles */
+  body.landing-page {
+    background-image: url('/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
+}
+
+/* Navbar styles */
+.navbar {
+  @apply flex justify-between p-4 bg-white shadow-md;
+}
+
+.logo {
+  @apply text-2xl font-bold text-gray-800;
+}
+
+.nav-links a {
+  @apply ml-4 text-gray-600 font-medium hover:text-blue-600;
+}
+
+.nav-login {
+  @apply text-blue-600 !important;
+}
+
+/* Hero section styles */
+.hero {
+  @apply h-screen relative;
+  background-image: url('https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?q=80&w=2070');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero-overlay {
+  @apply absolute inset-0 bg-black bg-opacity-40;
+}
+
+.hero-content {
+  @apply absolute top-16 left-10 z-20;
+}
+
+.hero-text {
+  @apply text-white text-left;
+}
+
+.hero-text h1 {
+  @apply text-5xl mb-2 font-bold;
+}
+
+.hero-text p {
+  @apply text-xl mb-4;
+}
+
+.hero-btn-primary {
+  @apply px-6 py-3 bg-blue-600 text-white rounded-md inline-block mt-4 hover:bg-blue-700;
+  text-decoration: none;
+}
+
+/* Home cards styles */
+.login-card-home {
+  @apply absolute bottom-20 left-1/2 transform -translate-x-1/2 bg-white p-6 rounded-lg flex gap-4 z-20;
+}
+
+.card-btn {
+  @apply px-8 py-4 text-white font-bold rounded-md;
+}
+
+.admin {
+  @apply bg-blue-800 hover:bg-blue-900;
+}
+
+.resident {
+  @apply bg-teal-700 hover:bg-teal-800;
+}
+
+.security {
+  @apply bg-green-600 hover:bg-green-700;
+}
+
+/* Login form styles */
+.login-wrapper {
+  @apply flex justify-center items-center min-h-screen bg-gray-100;
+}
+
+.login-box {
+  @apply bg-white p-8 rounded-lg w-full max-w-md shadow-lg text-center;
+}
+
+.login-header {
+  @apply mb-6;
+}
+
+.logo-icon-large {
+  @apply text-5xl text-blue-600;
+}
+
+.input-group {
+  @apply text-left mb-4;
+}
+
+.input-group label {
+  @apply block text-xs font-bold text-gray-600 mb-2;
+}
+
+.input-field {
+  @apply w-full p-3 border border-gray-300 rounded-md;
+}
+
+.submit-btn {
+  @apply w-full py-3 bg-blue-600 text-white border-none rounded-md cursor-pointer text-lg mt-4 hover:bg-blue-700;
+}
+
+/* OTP & Captcha styles */
+.otp-wrapper {
+  @apply flex gap-3;
+}
+
+.otp-btn {
+  @apply px-3 bg-green-500 text-white border-none rounded-md cursor-pointer;
+}
+
+.captcha-row {
+  @apply flex gap-3 items-center;
+}
+
+.captcha-display {
+  @apply bg-gray-300 p-3 tracking-widest font-bold line-through rounded-md;
+}
+
+.row {
+  @apply flex gap-3;
+}
+
+.toggle-text {
+  @apply mt-4 text-sm;
+}
+
+.toggle-text a {
+  @apply text-blue-600 font-bold;
+  text-decoration: none;
+}
