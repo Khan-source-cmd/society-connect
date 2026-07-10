@@ -49,12 +49,3 @@ backups/
 tmp/
 temp/
 
-# AI/Project management files (do not commit)
-PROJECT_*.md
-FINAL_*.md
-*_PROMPT.md
-*_FOR_CLAUDE.md
-viva.md
-WHATSAPP_API_STEPS.md
-FINAL_REMAINING_FIXES.md
-SOCIETYCONNECT_FINAL_PROMPT.md
